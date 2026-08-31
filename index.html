@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YATHARTH NAGPAL // AI & ML Systems Engineer & Biker Architect</title>
+  <meta name="description" content="Official portfolio of Yatharth Nagpal — AI & ML Systems Engineer, RAG & LLM Developer, Computer Vision Specialist, and Biker Rider." />
+  
+  <!-- Cinematic Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,500;0,700;0,800;1,700;1,800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="asphalt-theme">
+
+  <!-- Cinematic Cyber Preloader Overlay -->
+  <div class="cyber-preloader" id="cyber-preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo">
+        <span class="skew-badge">⚡ SYSTEM INITIALIZATION</span>
+      </div>
+      <div class="preloader-title">YATHARTH NAGPAL // PORTFOLIO 2.0</div>
+      <div class="preloader-progress-wrap">
+        <div class="preloader-bar-track">
+          <div class="preloader-bar-fill" id="preloader-bar-fill"></div>
+        </div>
+        <div class="preloader-status-row">
+          <span class="preloader-status-text" id="preloader-status-text">INITIALIZING ENGINE & NEURAL PIPELINES...</span>
+          <span class="preloader-percent" id="preloader-percent">0%</span>
+        </div>
+      </div>
+      <div class="preloader-telemetry-grid">
+        <span>[OK] GPU COMPOSITOR</span>
+        <span>[OK] AUDIO SYNTH</span>
+        <span>[OK] LLM EMBEDDINGS</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Neon Crosshair Target Cursor -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+
+  <!-- Letterbox Cinema Scope Overlay (CAM-#4) -->
+  <div class="letterbox-bar letterbox-top"></div>
+  <div class="letterbox-bar letterbox-bottom"></div>
+
+  <!-- Ambient Audio Indicator / Cockpit Bar -->
+  <header class="cockpit-bar">
+    <div class="cockpit-logo">
+      <span class="skew-badge">⚡ AI & FULL STACK ARCHITECT</span>
+      <span class="rider-name">YATHARTH NAGPAL</span>
+    </div>
+    
+    <nav class="cockpit-nav">
+      <a href="#scene-ignition" class="nav-link active"><span class="mono-num">01</span> IGNITION</a>
+      <a href="#scene-soul" class="nav-link"><span class="mono-num">02</span> ABOUT</a>
+      <a href="#scene-garage" class="nav-link"><span class="mono-num">03</span> AI & WEB GARAGE</a>
+      <a href="#scene-telemetry" class="nav-link"><span class="mono-num">04</span> TELEMETRY</a>
+      <a href="#scene-filmstrip" class="nav-link"><span class="mono-num">05</span> VIDEO REEL</a>
+      <a href="#scene-transmission" class="nav-link"><span class="mono-num">06</span> DISPATCH</a>
+    </nav>
+
+    <div class="cockpit-controls">
+      <button class="cinema-toggle-btn" id="resume-open-btn" type="button" title="Inspect Cyber Resume & Download Specs">
+        📄 RESUME SPECS
+      </button>
+
+      <a href="#scene-transmission" class="btn-cta-skew">TRANSMIT</a>
+    </div>
+  </header>
+
+
+  <!-- Scene 1: Ignition Cockpit Hero -->
+  <section class="hero-stage" id="scene-ignition" data-entrance="crash-zoom-in">
+    <div class="hero-bg-media">
+      <video class="hero-video-bg" id="hero-parallax-video" autoplay loop muted playsinline poster="assets/images/bike_dark_matter_1787863683770.png">
+        <source src="assets/videos/hero_loop.mp4" type="video/mp4" />
+        <img src="assets/images/bike_dark_matter_1787863683770.png" alt="Yatharth Nagpal AI Systems Ride" class="hero-img-bg" />
+      </video>
+      <canvas id="hero-particle-canvas" class="hero-particle-canvas"></canvas>
+      <div class="hero-vignette"></div>
+      <div class="hero-asphalt-grid"></div>
+      <div class="heat-haze-layer"></div>
+    </div>
+
+
+    
+    <div class="hero-diagonal-slash"></div>
+
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-tag-pill">
+          <span class="pill-dot"></span> Available for AI / ML Systems Engineer & Full Stack Roles
+        </div>
+        <h1 class="hero-title glitch-hover-title">
+          AI <span class="highlight-yellow">SYSTEMS.</span><br/>
+          FULL STACK <span class="highlight-crimson">SOUL.</span>
+        </h1>
+        <p class="hero-subtitle">
+          I'm <strong>Yatharth Nagpal</strong> — AI & ML Systems Engineer & Full Stack Developer based in New Delhi. Architecting production AI models, fine-tuning LLMs (Legal-BERT), building RAG vector search & multi-modal CV pipelines... alongside high-performance full-stack web applications in React, Next.js, Node.js, FastAPI & PostgreSQL.
+        </p>
+
+        <div class="hero-actions">
+          <button class="rev-engine-btn" id="ignition-rev-btn" type="button">
+            <svg class="rev-icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
+            </svg>
+            <span>IGNITE RACING ENGINE</span>
+          </button>
+          <a href="#scene-garage" class="btn-hud-secondary">
+            <span class="hud-icon">⚡</span> AI & FULL STACK GARAGE
+          </a>
+          <button class="btn-hud-secondary" id="hero-resume-btn" type="button">
+            <span class="hud-icon">📄</span> RESUME SPECS
+          </button>
+        </div>
+      </div>
+
+      <!-- Live Speedometer & AI Telemetry 3D HUD Card -->
+      <div class="hud-telemetry-card tilt-3d-card" id="hero-hud-card">
+        <div class="hud-card-header">
+          <span class="hud-label">// YATHARTH'S AI & FULL STACK TELEMETRY</span>
+          <span class="status-indicator">NEW DELHI, IN</span>
+        </div>
+
+
+        <!-- Real-time Audio Spectrum & Exhaust Particle Canvas -->
+        <div class="audio-visualizer-container">
+          <canvas id="audio-wave-canvas" width="300" height="30"></canvas>
+        </div>
+        
+        <div class="exhaust-particle-wrap">
+          <canvas id="exhaust-particles-canvas" width="300" height="40"></canvas>
+        </div>
+
+        <div class="hud-speedometer-box">
+          <div class="speed-readout">
+            <span class="speed-val" id="speedometer-value">000</span>
+            <span class="speed-unit">INF / SEC</span>
+          </div>
+          <div class="gear-badge" id="gear-indicator">GEAR 1</div>
+        </div>
+
+        <!-- Interactive Manual Gear Shifter Bar -->
+        <div class="manual-gear-shifter">
+          <span class="gear-shift-label">MANUAL GEAR SHIFTER (KEYS 1-6 / UP-DOWN):</span>
+          <div class="gear-btn-group">
+            <button class="gear-btn" data-gear="N" type="button">N</button>
+            <button class="gear-btn active" data-gear="1" type="button">1</button>
+            <button class="gear-btn" data-gear="2" type="button">2</button>
+            <button class="gear-btn" data-gear="3" type="button">3</button>
+            <button class="gear-btn" data-gear="4" type="button">4</button>
+            <button class="gear-btn" data-gear="5" type="button">5</button>
+            <button class="gear-btn" data-gear="6" type="button">6</button>
+          </div>
+        </div>
+
+        <div class="tacho-progress-wrap" style="margin-top: 1rem;">
+          <div class="tacho-label"><span>NEURAL MODEL RPM</span> <span id="rpm-val">1,200 RPM</span></div>
+          <div class="tacho-bar-track">
+            <div class="tacho-bar-fill" id="tacho-fill"></div>
+          </div>
+        </div>
+
+        <div class="hud-stat-grid">
+          <div class="hud-stat-item">
+            <span class="stat-lbl">AI & ML SYSTEMS</span>
+            <strong class="stat-val color-yellow">8+ BUILT</strong>
+          </div>
+          <div class="hud-stat-item">
+            <span class="stat-lbl">GLOBAL RANK</span>
+            <strong class="stat-val">186th (AWS ML)</strong>
+          </div>
+          <div class="hud-stat-item">
+            <span class="stat-lbl">DIAGNOSTIC ACCURACY</span>
+            <strong class="stat-val">89% (MedAI Pro)</strong>
+          </div>
+          <div class="hud-stat-item">
+            <span class="stat-lbl">RECORDS PROCESSED</span>
+            <strong class="stat-val color-yellow">500K+ (Airflow)</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator-wrap">
+      <span class="scroll-txt">SCROLL TO SHIFT GEARS</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Scene 2: Asphalt Soul & Bio (About Yatharth Nagpal - Fixed Balanced Layout) -->
+  <section class="section-stage soul-stage" id="scene-soul" data-entrance="whip-pan-left">
+    <div class="section-container">
+      
+      <!-- Top Row: Balanced Split Bio -->
+      <div class="grid-soul-top-split">
+        
+        <div class="soul-image-column">
+          <div class="frame-cutaway tilt-3d-card">
+            <img src="assets/images/rider.png" alt="Yatharth Nagpal Biker Portrait" class="rider-portrait-img" />
+            <div class="frame-tag">// YATHARTH NAGPAL — B.TECH VIT CSE</div>
+            <div class="frame-corner-br"></div>
+          </div>
+
+          <!-- Pilot Telemetry Gaming Card under Portrait -->
+          <div class="pilot-gaming-card tilt-3d-card">
+            <div class="pilot-card-header">
+              <span class="gaming-status-dot"></span> PILOT STATUS: ONLINE
+            </div>
+            <div class="pilot-stat-row">
+              <span>HP BAR</span>
+              <div class="hp-bar-track"><div class="hp-bar-fill" style="width: 100%;"></div></div>
+            </div>
+            <div class="pilot-stat-row">
+              <span>NITRO BOOST</span>
+              <div class="hp-bar-track"><div class="hp-bar-fill nitro-fill" style="width: 88%;"></div></div>
+            </div>
+          </div>
+
+          <!-- Spotify Play Card after Pilot Status Card -->
+          <div class="spotify-card-inline tilt-3d-card" style="margin-top: 1.2rem;">
+            <div class="sp-inline-header">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#1DB954"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141 4.38-1.32 9.78-.66 13.44 1.56.48.24.6.84.3 1.261zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.26-1.26 11.28-1.02 15.72 1.62.54.3.72.96.42 1.5-.3.54-.96.72-1.5.42z"/></svg>
+              <span>SPOTIFY BIKER RADIO BGM</span>
+            </div>
+            
+            <div class="sp-inline-track-row">
+              <span class="sp-inline-title" id="sp-card-title">ASPHALT NIGHTDRIFT</span>
+              <span class="sp-inline-sub">Yatharth's High-Octane Playlist</span>
+            </div>
+
+            <!-- Spotify Equalizer Animated Bars -->
+            <div class="spotify-equalizer" id="sp-inline-eq">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+
+            <div class="sp-inline-embed">
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXdLEN7aqioXM?utm_source=generator&theme=0&autoplay=1" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="eager" tabindex="-1" id="spotify-inline-iframe"></iframe>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="soul-content-column">
+          <div class="section-tag-row">
+            <span class="hazard-stripe"></span>
+            <span class="section-tag">02 // ABOUT YATHARTH NAGPAL (AI & FULL-STACK)</span>
+          </div>
+
+          <h2 class="section-title">
+            "ARCHITECTING <span class="highlight-yellow">PRODUCTION AI MODELS</span> & BUILDING SCALABLE <span class="highlight-crimson">FULL-STACK APPLICATIONS</span>."
+          </h2>
+
+          <p class="section-body">
+            Computer Science undergraduate at <strong>Vellore Institute of Technology (VIT)</strong> (CGPA: 8.42) specializing in Artificial Intelligence, Deep Learning, Natural Language Processing, Computer Vision, and Full-Stack Web Architecture. I focus on the end-to-end engineering lifecycle — fine-tuning Transformer models (Legal-BERT, LlamaIndex, PyTorch), deploying high-throughput FastAPI microservices, and crafting responsive frontend applications using React, Next.js, and Node.js.
+          </p>
+
+          <div class="rider-quote-box tilt-3d-card">
+            <blockquote>"The convergence of an LLM loss curve and a clean 60FPS full-stack React UI backed by async FastAPI pipelines are the purest experiences in modern software engineering."</blockquote>
+            <cite>— Yatharth Nagpal (AI Engineer & Full-Stack Developer)</cite>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Row 1: 3-Column Philosophy Cards Grid -->
+      <div class="soul-bottom-section">
+        <div class="section-sub-header">
+          <span class="sub-hdr-tag">// CORE AI & FULL-STACK ENGINEERING PHILOSOPHY</span>
+        </div>
+
+        <div class="philosophy-cards-row">
+          <div class="philo-card tilt-3d-card">
+            <div class="philo-num">01</div>
+            <h3>PRODUCTION AI & LLMs</h3>
+            <p>PyTorch, TensorFlow, LangChain, Legal-BERT fine-tuning, LlamaIndex RAG vector search, Grad-CAM explainability, and OpenCV computer vision.</p>
+          </div>
+          <div class="philo-card tilt-3d-card">
+            <div class="philo-num">02</div>
+            <h3>FULL-STACK ARCHITECTURE</h3>
+            <p>React.js, Next.js, Node.js, Express, TypeScript, FastAPI async backends, PostgreSQL, Redis, Supabase, and responsive UI design systems.</p>
+          </div>
+          <div class="philo-card tilt-3d-card">
+            <div class="philo-num">03</div>
+            <h3>MLOPS & HIGH-OCTANE FOCUS</h3>
+            <p>Docker containerization, Apache Airflow ETL handling 500K+ records, AWS cloud deployments, combined with a high-energy biker spirit.</p>
+          </div>
+        </div>
+
+
+        <!-- Bottom Row 2: 3-Column Experience & Education Grid with Vertical Laser Divider -->
+        <div class="section-sub-header" style="margin-top: 2.5rem;">
+          <span class="sub-hdr-tag">// EXPERIENCE & EDUCATION RUNWAY</span>
+        </div>
+
+        <div class="exp-edu-container">
+          <!-- Work Experience Column Group (2 Cards) -->
+          <div class="exp-group-wrap">
+            <div class="group-badge-tag work-tag">💼 WORK EXPERIENCE</div>
+            <div class="exp-cards-inner">
+              <div class="exp-item-card tilt-3d-card">
+                <div class="exp-period">Jun 2026 – Aug 2026</div>
+                <h4 class="exp-role">Full Stack Developer (Freelance)</h4>
+                <div class="exp-org">Galcare Pharmaceuticals — Jaipur, Rajasthan</div>
+                <p class="exp-desc">Architected high-performance full-stack web platform from scratch using React, Next.js, Node.js, and PostgreSQL.</p>
+              </div>
+
+              <div class="exp-item-card tilt-3d-card">
+                <div class="exp-period">Jan 2026 – Apr 2026</div>
+                <h4 class="exp-role">Data Science Intern</h4>
+                <div class="exp-org">LoneKnight Productions — Bhopal, MP</div>
+                <p class="exp-desc">Built 3+ end-to-end ML analytics pipelines, automated ETL with Apache Airflow & AWS processing 500K+ records.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vertical Glowing Laser Line Divider between Experience and Education -->
+          <div class="exp-edu-divider" title="Divider line between Experience & Education"></div>
+
+          <!-- Academic Education Column Group (1 Card) -->
+          <div class="edu-group-wrap">
+            <div class="group-badge-tag edu-tag">🎓 ACADEMIC EDUCATION</div>
+            <div class="exp-item-card tilt-3d-card full-height-card">
+              <div class="exp-period">Aug 2022 – May 2026</div>
+              <h4 class="exp-role">B.Tech, Computer Science & Engineering</h4>
+              <div class="exp-org">Vellore Institute of Technology (VIT)</div>
+              <p class="exp-desc">CGPA: 8.42. Coursework in AI, Deep Learning, CV, Cloud Computing. Top 10 Finalist Health4Hack (IIIT Delhi).</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Scene 3: The AI & Machine Garage (Projects Showcase from portfolio.ts) -->
+  <section class="section-stage garage-stage" id="scene-garage" data-entrance="snap-cut-right">
+    <div class="section-container">
+      
+      <div class="section-header-center">
+        <div class="section-tag-row justify-center">
+          <span class="hazard-stripe"></span>
+          <span class="section-tag">03 // THE AI & FULL-STACK SYSTEMS GARAGE</span>
+          <span class="hazard-stripe"></span>
+        </div>
+        <h2 class="section-title text-center">
+          YATHARTH'S <span class="highlight-yellow">AI & FULL-STACK</span> PROJECT ROSTER
+        </h2>
+        <p class="section-desc text-center">
+          Select an AI system or full-stack web application below to inspect architecture specs, tech stacks, live APIs, and GitHub repositories.
+        </p>
+      </div>
+
+
+      <!-- Garage Project Switcher Tabs -->
+      <div class="garage-tabs">
+        <button class="garage-tab-btn active" data-bike="medai" type="button">
+          <span class="tab-code">P01</span>
+          <span class="tab-name">MEDAI PRO</span>
+        </button>
+        <button class="garage-tab-btn" data-bike="legalai" type="button">
+          <span class="tab-code">P02</span>
+          <span class="tab-name">LEGAL AI</span>
+        </button>
+        <button class="garage-tab-btn" data-bike="gnn" type="button">
+          <span class="tab-code">P03</span>
+          <span class="tab-name">GNN FRAUD DETECTOR</span>
+        </button>
+        <button class="garage-tab-btn" data-bike="ecom" type="button">
+          <span class="tab-code">P04</span>
+          <span class="tab-name">ECOMGUARD ANALYTICS</span>
+        </button>
+        <button class="garage-tab-btn" data-bike="cyber" type="button">
+          <span class="tab-code">P05</span>
+          <span class="tab-name">FBI CYBER SCRAPER</span>
+        </button>
+        <button class="garage-tab-btn" data-bike="supportbot" type="button">
+          <span class="tab-code">P06</span>
+          <span class="tab-name">AI SUPPORT BOT</span>
+        </button>
+      </div>
+
+      <!-- AI & System Perspective Mode Bar -->
+      <div class="xray-mode-bar">
+        <span class="xray-label">PROJECT PERSPECTIVE MODE:</span>
+        <div class="xray-btn-group">
+          <button class="xray-btn active" data-filter="normal" type="button">🖥️ OVERVIEW & TECH STACK</button>
+          <button class="xray-btn" data-filter="thermal" type="button">📐 SYSTEM ARCHITECTURE</button>
+          <button class="xray-btn" data-filter="wireframe" type="button">🔄 DATA PIPELINE & WORKFLOW</button>
+          <button class="xray-btn" data-filter="neural" type="button">📊 MODEL BENCHMARKS & TELEMETRY</button>
+        </div>
+      </div>
+
+
+      <!-- Garage Active 3D Display Stage -->
+      <div class="garage-display-stage tilt-3d-card" id="garage-display">
+        <div class="garage-image-wrapper perspective-3d-stage" id="stage-3d-container">
+          <div class="stage-3d-floor"></div>
+          <img src="assets/images/redline_1200.png" alt="MedAI Pro" id="bike-display-img" class="bike-main-img machine-3d-target" />
+          <div class="garage-badge-overlay" id="bike-badge-txt">HEALTHCARE AI & DEEP LEARNING</div>
+          <a class="sound-play-btn" id="play-exhaust-sound" href="https://github.com/Yatharthnagpal/MedAIPro-AI-Diagnostics" target="_blank" rel="noopener noreferrer" title="Launch Live Demo or GitHub Project Specs">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            <span id="sound-btn-label">🚀 LIVE DEMO</span>
+          </a>
+
+        </div>
+
+        <div class="garage-spec-hud">
+          <div class="spec-header">
+            <h3 class="bike-title" id="bike-display-title"><span class="project-code-gold">P01</span> <span class="project-name-white">MedAI Pro</span></h3>
+
+
+            <span class="bike-year" id="bike-display-year">Jul 2025 – Nov 2025</span>
+          </div>
+
+          <p class="bike-desc" id="bike-display-desc">
+            A multi-modal medical diagnostics platform integrating 5 independent diagnostic modules across brain MRI, chest X-ray, retinal scan, skin lesion, and ICU sepsis datasets.
+          </p>
+
+          <div class="spec-grid">
+            <div class="spec-tile">
+              <span class="spec-name">ACCURACY</span>
+              <strong class="spec-value" id="spec-power">~89% PEAK</strong>
+            </div>
+            <div class="spec-tile">
+              <span class="spec-name">INFERENCE LATENCY</span>
+              <strong class="spec-value" id="spec-speed">42ms FASTAPI</strong>
+            </div>
+            <div class="spec-tile">
+              <span class="spec-name">MODELS USED</span>
+              <strong class="spec-value" id="spec-torque">ResNet50 + VGG16 + XGBoost</strong>
+            </div>
+            <div class="spec-tile">
+              <span class="spec-name">EXPLAINABILITY</span>
+              <strong class="spec-value" id="spec-weight">Grad-CAM Heatmaps</strong>
+            </div>
+          </div>
+
+          <div class="spec-features-list" id="spec-tech-pills">
+            <span class="feat-pill">Python</span>
+            <span class="feat-pill">PyTorch</span>
+            <span class="feat-pill">FastAPI</span>
+            <span class="feat-pill">Docker</span>
+            <span class="feat-pill">OpenCV</span>
+          </div>
+
+          <div class="project-repo-link-wrap">
+            <a href="https://github.com/Yatharthnagpal/MedAIPro-AI-Diagnostics" target="_blank" class="repo-btn-link" id="project-repo-btn">
+              VIEW GITHUB REPOSITORY ↗
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Scene 4: Track Telemetry & Skills (from portfolio.ts) -->
+  <section class="section-stage telemetry-stage" id="scene-telemetry" data-entrance="counter-snap-up">
+    <div class="section-container">
+      
+      <div class="section-header-center">
+        <div class="section-tag-row justify-center">
+          <span class="hazard-stripe"></span>
+          <span class="section-tag">04 // TELEMETRY, SKILLS & HONORS</span>
+          <span class="hazard-stripe"></span>
+        </div>
+        <h2 class="section-title text-center">
+          STATS THAT <span class="highlight-crimson">SPEAK</span> IN REV REVS
+        </h2>
+      </div>
+
+      <!-- Sub-Header 1: Engineering Telemetry Stats -->
+      <div class="sub-section-header">
+        <span class="sub-header-tag gold-tag">📊 ENGINEERING IMPACT & METRICS</span>
+        <div class="sub-header-line gold-line"></div>
+      </div>
+
+      <!-- Hero Stats from portfolio.ts -->
+      <div class="stats-counter-board">
+        <div class="counter-card tilt-3d-card">
+          <div class="counter-number" data-target="8">0</div>
+          <div class="counter-unit">SYSTEMS</div>
+          <div class="counter-label">END-TO-END AI & ML SYSTEMS</div>
+        </div>
+        <div class="counter-card tilt-3d-card">
+          <div class="counter-number" data-target="186">0</div>
+          <div class="counter-unit">GLOBAL RANK</div>
+          <div class="counter-label">ZELESTRA × AWS ML CHALLENGE</div>
+        </div>
+        <div class="counter-card tilt-3d-card">
+          <div class="counter-number" data-target="89">0</div>
+          <div class="counter-unit">% PEAK ACCURACY</div>
+          <div class="counter-label">MEDAI CLINICAL PLATFORM</div>
+        </div>
+        <div class="counter-card tilt-3d-card">
+          <div class="counter-number" data-target="500000">0</div>
+          <div class="counter-unit">RECORDS</div>
+          <div class="counter-label">LONEKNIGHT AIRFLOW PIPELINES</div>
+        </div>
+      </div>
+
+      <!-- Sub-Header 2: Technical Skills Arsenal -->
+      <div class="sub-section-header" style="margin-top: 3.5rem;">
+        <span class="sub-header-tag cyan-tag">🛠️ TECHNICAL SKILLS & STACK ARCHITECTURE</span>
+        <div class="sub-header-line cyan-line"></div>
+      </div>
+
+      <!-- Skills Grid from portfolio.ts -->
+      <div class="skills-categories-grid">
+        <div class="skill-cat-card tilt-3d-card card-ai">
+          <h3 class="skill-cat-title color-yellow">⚡ AI / ML & Applied Systems</h3>
+          <ul class="skill-list">
+            <li>PyTorch & Deep Neural Networks</li>
+            <li>LangGraph, CrewAI & OpenAI Agents SDK</li>
+            <li>MCP & Pydantic AI</li>
+            <li>LangChain & LlamaIndex RAG</li>
+            <li>Pinecone, ChromaDB & HuggingFace</li>
+            <li>Legal-BERT & NLP / OpenCV</li>
+            <li>TensorFlow & Scikit-Learn</li>
+          </ul>
+        </div>
+
+
+        <div class="skill-cat-card tilt-3d-card card-backend">
+          <h3 class="skill-cat-title color-yellow">⚙️ Backend, Async APIs & MLOps</h3>
+          <ul class="skill-list">
+            <li>FastAPI & Python Async Pipelines</li>
+            <li>GraphQL, Apollo & gRPC Microservices</li>
+            <li>Node.js, Express.js & NestJS</li>
+            <li>PostgreSQL, MySQL & Prisma ORM</li>
+            <li>MongoDB, Firebase & Supabase</li>
+            <li>Redis, Cassandra & Celery Queues</li>
+            <li>WebSockets & RESTful API Architectures</li>
+          </ul>
+        </div>
+
+
+        <div class="skill-cat-card tilt-3d-card card-cloud">
+          <h3 class="skill-cat-title color-yellow">☁️ Cloud, DevOps & Data</h3>
+          <ul class="skill-list">
+            <li>AWS, GCP & Cloud Infrastructure</li>
+            <li>Google Cloud Vertex AI & Azure ML</li>
+            <li>Docker & Containerization</li>
+            <li>PySpark & Databricks Lakehouse</li>
+            <li>Apache Airflow (ETL Workflows)</li>
+            <li>Playwright & BeautifulSoup Scraper</li>
+            <li>Git & GitHub Actions CI/CD</li>
+          </ul>
+        </div>
+
+
+        <div class="skill-cat-card tilt-3d-card card-frontend">
+          <h3 class="skill-cat-title color-yellow">🎨 Frontend & Full Stack</h3>
+          <ul class="skill-list">
+            <li>React.js & Next.js</li>
+            <li>React Native (Cross-Platform)</li>
+            <li>Tailwind CSS & TypeScript</li>
+            <li>Responsive UI & State Systems</li>
+          </ul>
+        </div>
+      </div>
+
+
+
+      <!-- Certifications & Achievements -->
+      <div class="honors-row">
+        <div class="honors-column">
+          <h3 class="honors-title">// CERTIFICATIONS</h3>
+          <div class="honor-badge-item tilt-3d-card">🏆 AWS Academy Graduate — Cloud Foundations</div>
+          <div class="honor-badge-item tilt-3d-card">🏆 NPTEL Certified — Cloud Computing</div>
+          <div class="honor-badge-item tilt-3d-card">🏆 IBM Certified — Machine Learning & AI Engineering</div>
+          <div class="honor-badge-item tilt-3d-card">🏆 IBM Certified — Computer Vision & Deep Learning</div>
+        </div>
+
+        <div class="honors-column">
+          <h3 class="honors-title">// HACKATHONS & HONORS</h3>
+          <div class="honor-badge-item tilt-3d-card">🥇 Top 10 Finalist — Health4Hack Hackathon (IIIT Delhi)</div>
+          <div class="honor-badge-item tilt-3d-card">🥇 186th Global Rank — Zelestra × AWS ML Ascend Challenge</div>
+          <div class="honor-badge-item tilt-3d-card">🥇 Top 50 Finalist — JustPay Hackathon</div>
+          <div class="honor-badge-item tilt-3d-card">🥇 2× District Qualifier — International Math Olympiad</div>
+        </div>
+      </div>
+
+      <!-- Interactive 3D Lean & Model Epoch Simulator -->
+      <div class="lean-simulator-box tilt-3d-card" style="margin-top: 3rem;">
+        <div class="sim-header">
+          <h3>INTERACTIVE 3D CORNER LEAN & MODEL EPOCH SIMULATOR</h3>
+          <span class="sim-tag">DRAG SLIDER TO TUNE LEAN / EPOCH</span>
+        </div>
+        
+        <div class="sim-body">
+          <div class="lean-visual-wrap">
+            <div class="lean-bike-icon" id="lean-bike-graphic">
+              <svg width="120" height="120" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4">
+                <circle cx="25" cy="70" r="18" stroke="#FFE600" />
+                <circle cx="75" cy="70" r="18" stroke="#FFE600" />
+                <path d="M25 70 L45 35 L60 35 L75 70 M45 35 L65 55" stroke="#FF1E43" />
+                <path d="M40 25 L55 25" stroke="#FFF" stroke-width="6" />
+              </svg>
+            </div>
+            <div class="ground-line"></div>
+          </div>
+
+          <div class="lean-controls">
+            <div class="lean-angle-display">
+              LEAN ANGLE / EPOCH: <span id="sim-angle-num" class="highlight-yellow">0°</span>
+            </div>
+            <input type="range" id="lean-range-input" min="-60" max="60" value="0" class="lean-slider" />
+            <div class="slider-marks">
+              <span>-60° (HARD LEFT)</span>
+              <span>0° (NEUTRAL)</span>
+              <span>+60° (HARD RIGHT)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Scene 5: Action & Motion Reel (AI & Full-Stack Project Viewfinder Stage) -->
+  <section class="section-stage filmstrip-stage" id="scene-filmstrip" data-entrance="widescreen-slide-left">
+    <div class="section-container">
+      
+      <div class="section-tag-row">
+        <span class="hazard-stripe"></span>
+        <span class="section-tag">05 // ACTION & PROJECT AI / FULL-STACK REEL</span>
+      </div>
+
+      <h2 class="section-title">
+        CINEMATIC <span class="highlight-yellow">AI SYSTEMS</span> & FULL-STACK ACTION REEL
+      </h2>
+      <p class="section-desc">
+        Click any project clip below to launch the widescreen 60FPS Director's Viewfinder with CRT scanlines, optical zoom, and architecture telemetry.
+      </p>
+
+      <!-- Animated Gaming Motion Video Clip Showcase Stage -->
+      <div class="gaming-video-clip-stage tilt-3d-card" id="video-clip-player">
+        <div class="video-crt-overlay"></div>
+        <div class="video-telemetry-overlay">
+          <span class="video-badge-live">LIVE AI / FULL-STACK REEL 60FPS</span>
+          <span class="video-fps-tag" id="video-fps-counter">FPS: 60 // 4K ANAMORPHIC</span>
+        </div>
+
+        <!-- Animated Motion Canvas Video Stream -->
+        <div class="canvas-video-stream-wrap">
+          <canvas id="gaming-motion-video-canvas" width="800" height="340"></canvas>
+          <div class="video-play-pulse-overlay" id="video-play-pulse">
+            <button class="press-start-btn" id="press-start-btn" type="button">▶ PRESS START TO PLAY SYSTEM REEL</button>
+          </div>
+        </div>
+
+        <div class="video-clip-controls">
+          <button class="v-ctrl-btn active" id="v-clip-1" data-clip="asphalt" type="button">⚡ AI MODEL INFERENCE</button>
+          <button class="v-ctrl-btn" id="v-clip-2" data-clip="neural" type="button">💻 FULL-STACK REACT/NEXT.JS</button>
+          <button class="v-ctrl-btn" id="v-clip-3" data-clip="exhaust" type="button">🧠 RAG & VECTOR SEARCH</button>
+        </div>
+      </div>
+
+      <!-- Widescreen Filmstrip Reel -->
+      <div class="filmstrip-wrapper" style="margin-top: 3rem;">
+        <div class="filmstrip-track" id="filmstrip-track">
+          
+          <div class="filmstrip-slide tilt-3d-card" data-img="assets/images/stunt.png" data-title="LLM Convergence & Loss Curve" data-sub="PyTorch & Legal-BERT Fine-Tuning Telemetry // 99.4% Loss Convergence">
+            <div class="sprocket-holes top"></div>
+            <img src="assets/images/stunt.png" alt="LLM Loss Curve Convergence" />
+            <div class="slide-overlay">
+              <span class="slide-badge">CLIP 01 // 60 FPS</span>
+              <h4 class="slide-title">LLM CONVERGENCE & LOSS CURVE</h4>
+            </div>
+            <div class="sprocket-holes bottom"></div>
+          </div>
+
+          <div class="filmstrip-slide tilt-3d-card" data-img="assets/images/biker_portrait.png" data-title="Full-Stack React & FastAPI Architecture" data-sub="Galcare Full-Stack Platform // 60FPS UI & Async PostgreSQL API">
+            <div class="sprocket-holes top"></div>
+            <img src="assets/images/biker_portrait.png" alt="Full-Stack React & FastAPI Architecture" />
+            <div class="slide-overlay">
+              <span class="slide-badge">CLIP 02 // 60 FPS</span>
+              <h4 class="slide-title">FULL-STACK REACT & FASTAPI</h4>
+            </div>
+            <div class="sprocket-holes bottom"></div>
+          </div>
+
+          <div class="filmstrip-slide tilt-3d-card" data-img="assets/images/dark_matter.png" data-title="Neural RAG Search & Vector Embeddings" data-sub="ChromaDB & Legal-BERT Vector Search // 42ms Inference Latency">
+            <div class="sprocket-holes top"></div>
+            <img src="assets/images/dark_matter.png" alt="Neural RAG Search" />
+            <div class="slide-overlay">
+              <span class="slide-badge">CLIP 03 // 60 FPS</span>
+              <h4 class="slide-title">NEURAL RAG & VECTOR SEARCH</h4>
+            </div>
+            <div class="sprocket-holes bottom"></div>
+          </div>
+
+          <div class="filmstrip-slide tilt-3d-card" data-img="assets/images/redline_1200.png" data-title="High-Throughput MLOps ETL Pipeline" data-sub="Apache Airflow & AWS Cloud // 500K+ Record Batch Pipeline">
+            <div class="sprocket-holes top"></div>
+            <img src="assets/images/redline_1200.png" alt="High-Throughput MLOps Pipeline" />
+            <div class="slide-overlay">
+              <span class="slide-badge">CLIP 04 // 60 FPS</span>
+              <h4 class="slide-title">HIGH-THROUGHPUT MLOPS ETL</h4>
+            </div>
+            <div class="sprocket-holes bottom"></div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- Director's Viewfinder Lightbox Modal (CAM-#28) -->
+    <div class="film-lightbox" id="film-lightbox">
+      <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+      <div class="lightbox-content">
+        <button class="lightbox-close" id="lightbox-close" type="button">✕ CLOSE</button>
+        
+        <!-- Director's Viewfinder Telemetry Header -->
+        <div class="viewfinder-header">
+          <span class="rec-dot-blinking">REC ● 60 FPS</span>
+          <span class="viewfinder-cam-info">CAM A // F/1.4 // ISO 800 // 1/1000s</span>
+        </div>
+
+        <div class="lightbox-frame" id="lightbox-zoom-stage">
+          <img src="" id="lightbox-img" alt="Enlarged View" class="lightbox-zoomable-img" />
+          <div class="viewfinder-grid-overlay"></div>
+        </div>
+
+        <!-- Lightbox Controls -->
+        <div class="lightbox-controls-bar">
+          <div class="zoom-btn-group">
+            <span class="ctrl-lbl">OPTICAL ZOOM:</span>
+            <button class="zoom-btn active" data-zoom="1" type="button">1X</button>
+            <button class="zoom-btn" data-zoom="1.8" type="button">2X</button>
+            <button class="zoom-btn" data-zoom="3" type="button">4X</button>
+          </div>
+
+          <button class="slomo-toggle-btn" id="slomo-btn" type="button">
+            <span>⚡ SLOW-MO (0.5X)</span>
+          </button>
+        </div>
+
+        <div class="lightbox-caption">
+          <h3 id="lightbox-title">TITLE</h3>
+          <p id="lightbox-sub">SUBTITLE</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scene 6: Transmission (Contact & Booking Stage) -->
+  <section class="section-stage transmission-stage" id="scene-transmission" data-entrance="scale-snap-in">
+    <div class="section-container grid-transmission">
+      
+      <div class="transmission-info">
+        <div class="section-tag-row">
+          <span class="hazard-stripe"></span>
+          <span class="section-tag">06 // TRANSMISSION DISPATCH</span>
+        </div>
+
+        <h2 class="section-title">
+          INITIATE <span class="highlight-crimson">DISPATCH</span>.<br/>
+          CONNECT WITH YATHARTH.
+        </h2>
+
+        <p class="section-body">
+          Available for AI / ML Systems Engineer roles, Applied AI projects, and high-octane collaborations. Send a message on the frequency.
+        </p>
+
+        <div class="contact-details-box">
+          <div class="contact-line">
+            <span class="contact-lbl">LOCATION HQ</span>
+            <strong>New Delhi, India</strong>
+          </div>
+          <div class="contact-line">
+            <span class="contact-lbl">DISPATCH EMAIL</span>
+            <strong>nagpalyatharth99@gmail.com</strong>
+          </div>
+          <div class="contact-line">
+            <span class="contact-lbl">DIRECT PHONE / WHATSAPP</span>
+            <strong>+91 7023045887</strong>
+          </div>
+        </div>
+
+        <!-- Developer Social Platforms Panel (matching Image 2 soundboard layout) -->
+        <div class="soundboard-panel tilt-3d-card" style="margin-top: 1.5rem;">
+          <div class="sb-header">
+            <span>CONNECT PLATFORMS</span>
+            <span class="sb-badge">DEVELOPER LINKS</span>
+          </div>
+          <div class="sb-buttons">
+            <a href="https://github.com/Yatharthnagpal" target="_blank" rel="noopener noreferrer" class="sb-btn social-card-btn">🐙 GITHUB </a>
+            <a href="https://www.linkedin.com/in/yatharthnagpal" target="_blank" rel="noopener noreferrer" class="sb-btn social-card-btn">💼 LINKEDIN </a>
+            <a href="https://www.kaggle.com/yatharth22bce11044" target="_blank" rel="noopener noreferrer" class="sb-btn social-card-btn">📊 KAGGLE </a>
+            <a href="https://leetcode.com/u/yatharthnagpal" target="_blank" rel="noopener noreferrer" class="sb-btn social-card-btn">💻 LEETCODE </a>
+          </div>
+        </div>
+
+
+      </div>
+
+
+      <!-- Cutaway Monolith Contact Form -->
+      <div class="transmission-form-wrapper tilt-3d-card">
+        <div class="form-monolith-header">
+          <span class="mono-tag">// INITIATE TRANSMISSION TO YATHARTH</span>
+          <span class="status-dot-green"></span>
+        </div>
+
+        <form class="transmission-form" id="dispatch-form">
+          <div class="form-group">
+            <label for="caller-name">YOUR NAME / ORGANIZATION</label>
+            <input type="text" id="caller-name" required placeholder="e.g. Sarah Jenkins (Tech Recruiter)" />
+          </div>
+
+          <div class="form-group">
+            <label for="caller-email">YOUR EMAIL ADDRESS</label>
+            <input type="email" id="caller-email" required placeholder="name@company.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="inquiry-type">DISPATCH PURPOSE</label>
+            <select id="inquiry-type">
+              <option value="ai-role">Full-Time AI / ML Engineer Role</option>
+              <option value="freelance">Custom AI / Full-Stack Project</option>
+              <option value="research">Research & Hackathon Collaboration</option>
+              <option value="biker-talk">Motorcycle & Biker Talk</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="caller-msg">TRANSMISSION MESSAGE</label>
+            <textarea id="caller-msg" rows="4" required placeholder="Write your message or project requirements for Yatharth Nagpal..."></textarea>
+          </div>
+
+          <button type="submit" class="submit-transmission-btn">
+            <span>TRANSMIT DISPATCH</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+          </button>
+        </form>
+        <div class="form-status-msg" id="form-status"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Cyber Resume Modal -->
+  <div class="film-lightbox" id="resume-modal">
+    <div class="lightbox-backdrop" id="resume-backdrop"></div>
+    <div class="lightbox-content resume-modal-content">
+      <button class="lightbox-close" id="resume-close" type="button">✕ CLOSE SPECS</button>
+
+      <div class="resume-header">
+        <h2>YATHARTH NAGPAL // CYBER SPECS RESUME</h2>
+        <span class="resume-tag">AI & ML SYSTEMS ENGINEER — B.TECH VIT CSE</span>
+      </div>
+
+      <div class="resume-body-scroll">
+        <div class="res-sec">
+          <h3>SUMMARY</h3>
+          <p>AI & ML Systems Engineer specializing in fine-tuning LLMs (Legal-BERT), building RAG pipelines, Graph Neural Networks, and full-stack async backends (FastAPI, React/Next.js). B.Tech CSE graduate from VIT (8.42 CGPA).</p>
+        </div>
+
+        <div class="res-sec">
+          <h3>WORK EXPERIENCE</h3>
+          <p><strong>Galcare Pharmaceuticals — Full Stack Developer Freelance (Jun 2026 – Aug 2026)</strong><br/>Built full-stack React/Next.js platform with PostgreSQL & Node.js.</p>
+          <p style="margin-top: 6px;"><strong>LoneKnight Productions — Data Science Intern (Jan 2026 – Apr 2026)</strong><br/>Architected Apache Airflow & AWS processing 500K+ records.</p>
+        </div>
+
+        <div class="res-sec">
+          <h3>KEY AI PROJECTS</h3>
+          <p>• <strong>MedAI Pro:</strong> 5-Module diagnostic platform (ResNet50, VGG16, Grad-CAM, ~89% accuracy).</p>
+          <p>• <strong>LegalAI:</strong> 29 Legal features, Legal-BERT fine-tuning, OCR vector RAG search.</p>
+          <p>• <strong>GNN Fraud Detector:</strong> GraphSAGE network for agricultural subsidy fraud detection.</p>
+        </div>
+
+        <div class="res-sec">
+          <h3>CONTACT & HQ</h3>
+          <p>Email: nagpalyatharth99@gmail.com | WhatsApp: +91 7023045887 | New Delhi, India</p>
+        </div>
+      </div>
+
+      <div class="resume-modal-footer">
+        <a href="mailto:nagpalyatharth99@gmail.com" class="btn-cta-skew">EMAIL YATHARTH</a>
+        <a href="https://wa.me/917023045887" target="_blank" class="btn-hud-secondary">WHATSAPP DIRECT</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="asphalt-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="skew-badge">YATHARTH NAGPAL // AI & BIKER</span>
+        <p>© 2026 YATHARTH NAGPAL. NEW DELHI, INDIA. ALL RIGHTS RESERVED.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#scene-ignition">TOP ↑</a>
+        <a href="#scene-soul">ABOUT</a>
+        <a href="#scene-garage">PROJECTS</a>
+        <a href="#scene-telemetry">SKILLS</a>
+        <a href="#scene-transmission">CONTACT</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
